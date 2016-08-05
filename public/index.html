@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="TicketPortal" ng-controller="MainCtrl as mc">
+    <head>
+        <title>Ticket Portal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- 1. Load libraries -->
+        <script src="app/lib/angular.min.js" type="text/javascript"></script>
+        <script src="app/lib/angular-route.min.js" type="text/javascript"></script>
+
+        <!-- 2. Load our 'modules' -->
+        <script src="app/js/ticketPortal.module.js" type="text/javascript"></script>
+        <script src="app/js/ticketPortal.config.js" type="text/javascript"></script>
+        <script src="app/js/controller/main.controller.js" type="text/javascript"></script>
+        <script src="app/js/controller/user.controller.js" type="text/javascript"></script>
+        <script src="app/js/factory/user.factory.js" type="text/javascript"></script>
+        
+
+    </head>
+
+    <body>
+        <div class="body-container">
+            <header>
+                Ticket Portal
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#/userList">User List</a>
+                    </li>
+                </ul>
+            </nav>
+            <section>
+                <div ng-view></div>
+            </section>
+            <footer>
+            </footer>
+        </div>
+    </body>
+
+</html>
